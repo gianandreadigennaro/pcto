@@ -1,30 +1,22 @@
 #include <stdio.h>
 
-int add()
+int add(int a, int b)
 {
-    int a;
-    int b;
     printf("il risultato e' %d\n", a+b);
     return a+b;
 }
-int sott()
+int sott(int a, int b)
 {
-    int a;
-    int b;
     printf("il risultato e' %d\n", a-b);
     return a-b;
 }
-int div()
+int div(int a, int b)
 {
-    int a;
-    int b;
     printf("il risultato e' %d\n", a/b);
     return a/b;
 }
-int mol()
+int mol(int a, int b)
 {
-    int a;
-    int b;
     printf("il risultato e' %d\n", a*b);
     return a*b;
 }
@@ -33,25 +25,25 @@ int main()
    int a;
    int b;
     int f;
-    printf("inserisci 2 numei\n");
+    printf("inserisci 2 numeri\n");
     scanf("%d %d",&a ,&b);
     printf("inserisci 1 per add 2 per sott 3 per div 4 per molt\n");
     scanf("%d",&f);
     if(f==1)
     {
-       printf("%d",add());
+       printf("%d",add(a,b));
     }
     else if(f==2)
     {
-      printf("%d",sott());
+      printf("%d",sott(a,b));
     }
     else if(f==3)
     {
-         printf("%d",div());
+         printf("%d",div(a,b));
     }
     else if(f==4)
     {
-        printf("%d",mol());
+        printf("%d",mol(a,b));
     }
     return 0;
 }
